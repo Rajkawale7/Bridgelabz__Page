@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Demo</title>
+    <style>
+        body{padding: 2em;}
+
+        .headerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .footerContainer{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: rgb(144, 160, 238);
+            font-weight: bold;
+            padding: 10px;
+        }
+        .mainContainer{
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        .mainContentItem{
+            text-align: left;
+            background: rgb(40, 30, 30);
+        }
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+        
+        .sideBarLeftItem{ background: rgb(60, 193, 109); }
+        .sideBarRightItem{background: rgb(80, 224, 210);}
+
+        .sideBarItem{ flex: 1 0 0; border: 0px solid rgb(21, 12, 12);}
+        .mainContentItem{ flex: 3 0px;}
+        .sideBarLeftItem{ order: 1; }
+        .mainContentItem{ order: 2; }
+        .sideBarRightItem{ order: 3; }
+    </style>
+</head>
+
+<body>
+    <header class="headerContainer">Header - Sample FlexBox Example</header>
+    <div class="mainContainer">
+    <section class="mainContentItem">
+
+    <article>
+        <h1>First Article </h1>
+        <p>The origins of the taco are really unknown. My theory is that it dates from the 18th century and the silver mines in Mexico, because in those mines the word “taco” referred to the little charges they would use to excavate the ore. These were pieces of paper that they would wrap around gunpowder and insert into the holes they carved in the rock face.</p>
+    </article>
+
+    <article>
+        <h2>Second Article </h2>
+        <p>For a long time taquerías were in the working-class neighborhoods. Industrialization brought migrants from all over the country, and particularly women, to Mexico City because of light industry. Women brought with them their regional cooking skills. Every state, every region, every town has slightly different foods, so Mexico City was a bubbling stew where all these foods were available. People were able to sample a cosmopolitan world of dining that was not for the rich. This Mexican popular cuisine was the origin of what we think about as Mexican food.</p>
+    </article>
+
+    <article>
+        <h3>Third Article </h3>
+        <p>The Spanish conquistadors looked down on Native foods and tried to bring European foods with them. One of the reasons for this was religion. Corn was associated with Native deities, and wheat was the grain used for the holy Eucharist. </p>
+        <p>These foods also had social connotations. In the 19th century, Native food was considered lower class and European food was considered elite, but here’s the catch: there was recognition that these Native foods were Mexican. </p>
+    </article> </section>
+
+    <sidebar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sidebar> 
+    <sidebar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sidebar>
+    
+    </div>
+    <footer class="footerContainer">
+        <i>__Raj Kawale </i>
+    </footer>
+
+</body>
+</html>

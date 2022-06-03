@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration_Form</title>
+
+        <style> 
+            div {
+                border: 1px solid black;
+                background-color: gainsboro;
+                margin-right: 80px;
+                margin-left: 20px; 
+            }
+
+            body{
+                padding: 10px 500px;
+            }
+            .formdesign{
+                font-size: 16px;
+            }
+
+            .formdesign input{
+                width: 100%;
+                padding: 8px 8px;
+                border: 2px solid green;
+                margin: 2px;
+                border-radius: 10px;
+                font-size: 15px;
+                font-family: 'Times New Roman';
+            }
+
+            footer {
+                display: flex;
+                justify-content: center;
+                padding: 1px;
+                background-color: #87bcf0;
+                color: black;
+            }
+
+        </style>
+    </head>
+
+    <body 
+        style="background-color:silver" > 
+
+        <header>
+        <h1 
+        style= "background-color:rgb(142, 189, 142); 
+        border: 2px solid black; 
+        width:fit-content ;
+        border-radius: 5px; 
+        font-size: large;"> 
+        "||**Welcome to The Post Graduation Application Form**||"
+        </h1>
+        </header>
+
+        <form action="">
+        <div class="formdesign">
+            
+        <table>
+        <tr>
+            <td>
+                <br> <b> First Name: </b> <input type="text" pattern="[a-zA-Z]+" minlength="1" maxlength="20" placeholder="First Name" required> </br>
+                <br> <b> Middle Name: </b> <input type="text" pattern="[a-zA-Z]+" minlength="1" maxlength="20" placeholder="Middle Name" required> </br>
+                <br> <b> Last Name: </b> <input type="text" pattern="[a-zA-Z]+" minlength="1" maxlength="20" placeholder="Last Name" required> </br>
+                <br><label for="Phone Number"> <b> Phone Number : </b> </label>
+                   <select name="Phone Number" id="Country code"></selectname>
+                   <option>1</option>
+                   <option>44</option>
+                   <option>91</option>
+                   <option>61</option>
+                   <option>49</option>
+                   <option>354</option>
+                   <option>62</option>
+                   <option>60</option>
+                   <option>850</option>
+                   Phone Number: <input type="text" pattern="\d{10}" minlength="1" maxlength="10" placeholder="1234567890" required> 
+                </br></select>
+                <br> <b> Email id : </b> <input type="text" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="xyz@gmail.com" required> </br>
+                <br> <b> City: </b> <input type="text" pattern="[a-zA-Z]+" placeholder="city Name" required> </br>
+                <br> <b> State: </b> <input type="text"pattern="[a-zA-Z]+" placeholder="State Name" required> </br>
+                <br> <b> Country: </b> <input type="text" pattern="[a-zA-Z]+" placeholder="Country Name" required> </br>
+            
+                <br> <label for="Education"> <b> Choose your Graduation : </b> </label></br>
+                <select name="Education" id="Choose">
+                    <option value="select">None</option>
+                    <option value="BE">BE/B-tech</option>
+                    <option value="BSC">BSC</option>
+                    <option value="BCA">BCA</option>
+                </select>
+
+                <br> <label for="Year Of Education"> <b> Choose your Graduation Year : </b> </label></br>
+                <select name="Year of Education" id="Years">
+                    <option value="select">None</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+
+                <h2><input type="submit" value= "Submit"> </h2>
+                
+            </td>
+        </tr>
+        </table>
+        </div>
+        </form>
+        <span style='font-size:50px;'>&#128330;</span>
+
+        <address>
+        <footer>
+            <p> Contact us for any queries &#9993;  <a href="mailto:Rajkawale712@gmail.com">Rajkawale712@gmail.com</a>, &#9990;  <a href="tel:+919049331047">(904) 933-1047</a> <br> <i> (Raj Kawale) </i></p>
+        </footer>
+        </address>
+    </body>
+    
+</html> 
